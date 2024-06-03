@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposta de Parceria</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 100px;
+            display: flex;
+        }
+        .menu-fixo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100%;
+            background-color: none;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .menu-fixo img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .menu-fixo a {
+            color: gray;
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+        }
+        .menu-fixo a:hover {
+            
+            text-decoration: underline;
+        }
+        
+        .imagem-fixa {
+    position: fixed;
+    top: 30px;
+    left: 1400px; /* Ajuste conforme necessário para alinhar com o conteúdo */
+    width: 260px; /* Ajuste conforme necessário */
+    height: 110px; /* Ajuste conforme necessário */
+    margin-top: 22;
+    z-index: 1000; /* Para garantir que a imagem fique acima de outros elementos */
+}
+        
+        
+        .conteudo {
+            margin-left: 200px; /* Ajuste a margem esquerda para a largura do menu fixo */
+            padding: 20px;
+            box-sizing: border-box;
+            width: calc(100% - 200px); /* Ajuste a largura para ocupar o espaço restante */
+        }
+        .secao {
+            margin-bottom: 40px;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+        .popup-content {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .popup-close {
+            display: block;
+            text-align: right;
+            margin-top: 10px;
+        }
+        .popup-close button {
+            padding: 5px 10px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: lightgray;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            box-shadow: gray;
+        }
+        .popup img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-fixo">
+       !<!-- <img src="https://via.placeholder.com/32x32" alt="Intro"> -->
+       <BR><BR><BR><BR><BR><BR><BR><BR>
+        <a href="#introducao">Introdução</a>
+        <a href="#conteudo">Objetivo</a>
+        <a href="#premissas">Premissas</a>
+        <a href="#simulacoes">Simulações</a>
+        <a href="#modelos">Modelos para a Parceria</a>
+        <a href="#conclusao">Conclusão</a>
+    </div>
+   <div class="conteudo">
+    <div id="introducao" class="secao">
+        <img src="https://d1yei2z3i6k35z.cloudfront.net/3119789/6647593e7ac78_CapaGoogleFNWAsessoriaDigital.png" alt="Intro" class="imagem-fixa">
+        <h1><strong>FNW Assessoria Estratégica Digital<br>Proposta de Parceria 2024</strong></h1>
+    </div>
+</div>
+        <div id="conteudo" class="secao">
+            <h3><strong>Objetivo Geral:</strong></h3>
+            <p>Transformar a maneira como oferecemos consultoria e mentoria, migrando para um modelo de assessoria mais eficiente, escalável e com crescimento recorrente. Esta parceria combina nossas forças para criar soluções inovadoras e personalizadas, atendendo às necessidades específicas de nossos clientes e promovendo um crescimento sustentável.</p>
+        </div>
+        <div id="premissas" class="secao">
+            <h2><strong>Premissas</strong></h2>
+            <br>
+            <p><strong>Oportunidade:</strong><br> Facilitar e acelerar a Transição de Consultorias e Mentorias X1 para Assessoria Periódica Contínua com acesso 24/7, aplicando Ciclometria para eliminar gargalos, promover crescimento recorrente e escalável.</p>
+            <br>
+            <p><strong>Crescimento:</strong><br> Assessoria com Metodologia de Expansão para territórios nacionais e internacionais (ver TAM, SAM, SOM).</p>
+            <br>
+            <p><strong>Recorrência:</strong><br> Implementação de plataforma digital validada para acesso a métodos, ferramentas e conteúdo para garantir a continuidade e promover LTV sem gargalo.</p>
+            <br>
+            <p><strong>Conteúdo LMS CMS:</strong><br> Desenvolvimento /Adaptação /Publicação de conteúdo exclusivo (Parceiro / FNW) para C-Level, Diretoria e Gestão.</p>
+            <br>
+            <p><strong>Conteúdo Corporativo com PDI:</strong><br> Acessos a conteúdo licenciado e curado para Plano de Desenvolvimento Individual de funcionários dos Clientes da Assessoria.</p>
+            <button class="button" onclick="openPopup('premissas')">Leia mais</button>
+        </div>
+        <div id="simulacoes" class="secao">
+            <h2><strong>Simulações</strong></h2>
+            <p>Simulação de Cenários de Parceria: Projeção de parceria com base em diversos parâmetros financeiros e operacionais.</p>
+            <button class="button" onclick="openPopup('simulacaoParceria')">Leia mais</button>
+            <p>Simulação de Crescimento da Base de Clientes: Análise do crescimento da base de clientes ao longo do tempo.</p>
+            <button class="button" onclick="openPopup('simulacaoCrescimentoClientes')">Leia mais</button>
+            <p>Crescimento de Assinantes: Projeção do crescimento de assinantes com base em visualizações diárias e taxas de conversão.</p>
+            <button class="button" onclick="openPopup('simulacaoCrescimentoAssinantes')">Leia mais</button>
+            <p>Simulação de Cenários - Lucro Compartilhado: Análise do lucro compartilhado com base em diferentes cenários de mercado.</p>
+            <button class="button" onclick="openPopup('simulacaoLucroCompartilhado')">Leia mais</button>
+        </div>
+        <div id="modelos" class="secao">
+            <h2><strong>Modelos para a Parceria</strong></h2>
+            <h3><strong>1. Publicação de Conteúdos com Garantia de Acessos</strong></h3>
+            <p>Garante um fee fixo para a publicação dos conteúdos com garantia de acessos a clientes.</p>
+           <!-- <p><strong>Fee:</strong> R$ 1.200,00 por empresa com até 12 acessos.</p> -->
+            <p><strong>Objetivo:</strong> Publicar conteúdos e garantir que os funcionários tenham acesso.</p>
+            <!-- <p><strong>Benefícios:</strong></p>
+            <ul>
+                <li>Acesso a conteúdos curados e licenciados.</li>
+                <li>Personalização de página de acessos corporativos com branding.</li>
+            </ul> -->
+           <br><p><strong>Modelo de Receita:</strong> Fee de Esruturação e ocorre Participação no Lucro.
+            <button class="button" onclick="openPopup('caminho1')">Leia mais</button>
+            <br><br><br>
+            
+            <h3><strong>2. Apoio Estratégico e Direcionamento para Aceleração</strong></h3>
+            <p>Inclui um fee maior para que possamos fornecer apoio estratégico e direcionamento para a aceleração...</p>
+            <!-- <p><strong>Fee:</strong> R$ 7.500,00 para entrar com apoio estratégico (ETO).</p> -->
+            <p><strong>Objetivo:</strong> Acelerar a implementação de diretrizes e garantir a publicação dos conteúdos exclusivos.</p>
+            <!-- <p><strong>Adaptação de Conteúdo:</strong> Fee adicional para adaptação de conteúdo quando necessário.</p>
+            <p><strong>Benefícios:</strong></p>
+            <ul>
+                <li>Suporte estratégico para a alta direção.</li>
+                <li>Aceleração na implementação de diretrizes.</li>
+                <li>Publicação de conteúdos existentes e adaptação conforme necessário.</li>
+            </ul> -->
+            <br><p><strong>Modelo de Receita:</strong> Fee de Aceleração e parceiro recebe % maior de Lucro:
+               <!--  <ul>
+                    <li>Assessoria</li>
+                    <li>Contingência (custos com ferramentas para aceleração)</li>
+                    <li>Parceiro</li>
+                </ul> -->
+           
+            <button class="button" onclick="openPopup('caminho2')">Leia mais</button>
+            <br><br><br>
+            
+            <h3><strong>3. Mix de Conteúdos e Apoio Estratégico</strong></h3>
+            <p>Combinação dos dois caminhos anteriores, oferecendo tanto a publicação de conteúdos quanto o apoio estratégico.</p>
+            
+           
+            <p><strong>Objetivo:</strong> Garantir acessos, publicar conteúdos e fornecer apoio estratégico.</p>
+            <!-- <p><strong>Benefícios:</strong></p>
+            <ul>
+                <li>Acesso a conteúdos curados e licenciados.</li>
+                <li>Personalização de página de acessos corporativos com branding.</li>
+                <li>Suporte estratégico para a alta direção.</li>
+                <li>Aceleração na implementação de diretrizes.</li>
+                <li>Publicação de conteúdos existentes e adaptação conforme necessário.</li>
+            </ul> -->
+            <p><strong>Fee:</strong> Combinação dos fees dos dois caminhos anteriores.
+                <!-- <ul> 
+                    <li>R$ 1.200,00 por empresa com até 12 acessos.</li>
+                    <li>R$ 7.500,00 para apoio estratégico (ETO).</li> 
+                </ul> -->
+            <p><strong>Modelo de Receita:</strong> Receita após o piso dividida em três partes:
+              <!--   <ul>
+                    <li>Assessoria</li>
+                    <li>Contingência (custos com ferramentas para aceleração)</li>
+                    <li>Parceiro</li>
+                </ul> -->
+          
+            <button class="button" onclick="openPopup('caminho3')">Leia mais</button>
+            <br><br><br>
+        </div>
+        <div id="conclusao" class="secao">
+            <h2><strong>Conclusão</strong></h2>
+            <p>Esta proposta visa criar uma parceria robusta e escalável, aproveitando o melhor das consultorias e mentorias, mas com um modelo de assessoria que elimina gargalos e promove crescimento contínuo. A combinação de conteúdo licenciado e próprio, junto com suporte estratégico, garante uma solução completa e adaptável às necessidades de sua organização.</p>
+            <button class="button" onclick="openPopup('conclusao')">Leia mais</button>
+        </div>
+   <br><br><br><br><br>
+
+    <div id="popup" class="popup">
+        <div class="popup-content" id="popup-content"></div>
+        <div class="popup-close">
+            <button onclick="closePopup()">Fechar</button>
+        </div>
+    </div>
+    <div id="overlay" class="overlay" onclick="closePopup()"></div>
+
+    <script>
+        function openPopup(section) {
+            const content = {
+                premissas: `
+                    <h2>Premissas</h2>
+                    <img src="https://via.placeholder.com/600x400" alt="Premissas">
+                    <p><strong>Oportunidade:</strong><br> Facilitar e acelerar a Transição de Consultorias e Mentorias X1 para Assessoria Periódica Contínua com acesso 24/7, aplicando Ciclometria para eliminar gargalos, promover crescimento recorrente e escalável.</p>
+                    <p><strong>Crescimento:</strong><br> Assessoria com Metodologia de Expansão para territórios nacionais e internacionais (ver TAM, SAM, SOM).</p>
+                    <p><strong>Recorrência:</strong><br> Implementação de plataforma digital validada para acesso a métodos, ferramentas e conteúdo para garantir a continuidade e promover LTV sem gargalo.</p>
+                    <p><strong>Conteúdo Próprio:</strong><br> Desenvolvimento /Adaptação /Publicação de conteúdo exclusivo (Marcello Arpino /ALMA) para C-Level, Diretoria e Gestão.</p>
+                    <p><strong>Conteúdo Corporativo com PDI:</strong><br> Acessos a conteúdo licenciado e curado para Plano de Desenvolvimento Individual de funcionários dos Clientes da Assessoria.</p>
+                    <a href="https://example.com" target="_blank">Saiba mais</a>
+                `,
+                simulacaoParceria: `
+                    <h2>Simulação de Cenários de Parceria</h2>
+                    <img src="https://via.placeholder.com/600x400" alt="Simulação de Cenários de Parceria">
+                    <p>Projeção de parceria com base em diversos parâmetros financeiros e operacionais. Esta simulação ajuda a visualizar os possíveis resultados da parceria e a tomar decisões informadas.</p>
+                    <a href="https://example.com" target="_blank">Saiba mais</a>
+                `,
+                simulacaoCrescimentoClientes: `
+                    <h2>Simulação de Crescimento da Base de Clientes</h2>
+                    <img src="https://via.placeholder.com/600x400" alt="Simulação de Crescimento da Base de Clientes">
+                    <p>Análise do crescimento da base de clientes ao longo do tempo. Esta simulação permite prever o aumento da base de clientes e ajustar estratégias conforme necessário.</p>
+                    <a href="https://example.com" target="_blank">Saiba mais</a>
+                `,
+                simulacaoCrescimentoAssinantes: `
+                    <h2>Crescimento de Assinantes</h2>
+                    <img src="https://via.placeholder.com/600x400" alt="Crescimento de Assinantes">
+                    <p>Projeção do crescimento de assinantes com base em visualizações diárias e taxas de conversão. Esta simulação ajuda a entender o potencial de crescimento de assinantes e a otimizar campanhas de marketing.</p>
+                    <a href="https://example.com" target="_blank">Saiba mais</a>
+                `,
+                simulacaoLucroCompartilhado: `
+                    <h2>Simulação de Cenários - Lucro Compartilhado</h2>
+                    <img src="https://via.placeholder.com/600x400" alt="Simulação de Cenários - Lucro Compartilhado">
+                    <p>Análise do lucro compartilhado com base em diferentes cenários de mercado. Esta simulação permite avaliar como diferentes condições de mercado podem impactar o lucro compartilhado.</p>
+                    <a href="https://example.com" target="_blank">Saiba mais</a>
+                `,
+                caminho1: `
+                    <h3>1. Publicação de Conteúdos com Garantia de Acessos</h3>
+                    <img src="https://via.placeholder.com/600x400" alt="Publicação de Conteúdos com Garantia de Acessos">
+                    <p>Este caminho garante um fee fixo para a publicação dos conteúdos e a garantia de acessos.</p>
+                    <p><strong>Fee:</strong> R$ 1.200,00 por empresa com até 12 acessos.</p>
+                    <p><strong>Objetivo:</strong> Publicar conteúdos e garantir que os funcionários tenham acesso a eles.</p>
+                    <p><strong>Benefícios:</strong></p>
+                    <ul>
+                        <li>Acesso a conteúdos curados e licenciados.</li>
+                        <li>Personalização de página de acessos corporativos com branding.</li>
+                    </ul>
+                    <p><strong>Modelo de Receita:</strong> Revenue Share após o piso de acessos garantidos.</p>
+                    <a href="https://example.com" target="_blank">Saiba mais</a>
+                `,
+                caminho2: `
+                    <h3>2. Apoio Estratégico e Direcionamento para Aceleração</h3>
+                   // <img src="https://via.placeholder.com/600x400" alt="Apoio Estratégico e Direcionamento para Aceleração"> //
+                    <p>Este caminho inclui um fee maior para que possamos fornecer apoio estratégico e direcionamento para a aceleração da implementação de diretrizes com as plataformas.</p>
+                    <p><strong>Fee:</strong> R$ 7.500,00 para entrar com apoio estratégico (ETO).</p>
+                    <p><strong>Objetivo:</strong> Acelerar a implementação de diretrizes e garantir a publicação dos conteúdos como estão.</p>
+                    <p><strong>Adaptação de Conteúdo:</strong> Fee adicional para adaptação de conteúdo quando necessário.</p>
+                    <p><strong>Benefícios:</strong></p>
+                    <ul>
+                        <li>Suporte estratégico para a alta direção.</li>
+                        <li>Aceleração na implementação de diretrizes.</li>
+                        <li>Publicação de conteúdos existentes e adaptação conforme necessário.</li>
+                    </ul>
+                    <p><strong>Modelo de Receita:</strong> Receita após o piso dividida em três partes:
+                        <ul>
+                            <li>Assessoria</li>
+                            <li>Contingência (custos com ferramentas para aceleração)</li>
+                            <li>Parceiro</li>
+                        </ul>
+                    </p>
+                    <a href="https://example
+                                        <a href="https://example.com" target="_blank">Saiba mais</a>
+                `,
+                caminho3: `
+                    <h3>3. Mix de Conteúdos e Apoio Estratégico</h3>
+                    <img src="https://d1yei2z3i6k35z.cloudfront.net/3119789/665d3d93ab9b5_SimuladorRevenueSHare.png" alt="Mix de Conteúdos e Apoio Estratégico">
+                    <p>Combinação dos dois caminhos anteriores, oferecendo tanto a publicação de conteúdos quanto o apoio estratégico.</p>
+                    <p><strong>Fee:</strong> Combinação dos fees dos dois caminhos anteriores.
+                        <ul>
+                            <li>R$ 1.200,00 por empresa com até 12 acessos.</li>
+                            <li>R$ 7.500,00 para apoio estratégico (ETO).</li>
+                        </ul>
+                    </p>
+                    <p><strong>Objetivo:</strong> Garantir acessos, publicar conteúdos e fornecer apoio estratégico.</p>
+                    <p><strong>Benefícios:</strong></p>
+                    <ul>
+                        <li>Acesso a conteúdos curados e licenciados.</li>
+                        <li>Personalização de página de acessos corporativos com branding.</li>
+                        <li>Suporte estratégico para a alta direção.</li>
+                        <li>Aceleração na implementação de diretrizes.</li>
+                        <li>Publicação de conteúdos existentes e adaptação conforme necessário.</li>
+                    </ul>
+                    <p><strong>Modelo de Receita:</strong> Receita após o piso dividida em três partes:
+                        <ul>
+                            <li>Assessoria</li>
+                            <li>Contingência (custos com ferramentas para aceleração)</li>
+                            <li>Parceiro</li>
+                        </ul>
+                    </p>
+                    <a href="https://freenat-doc.systeme.io/blog-assessoria-digital/painel-v3">Saiba mais</a>
+                `,
+                conclusao: `
+                    <h2>Conclusão</h2>
+                    <img src="https://via.placeholder.com/600x400" alt="Conclusão">
+                    <p>Esta proposta visa criar uma parceria robusta e escalável, aproveitando o melhor das consultorias e mentorias, mas com um modelo de assessoria que elimina gargalos e promove crescimento contínuo. A combinação de conteúdo licenciado e próprio, junto com suporte estratégico, garante uma solução completa e adaptável às necessidades de sua organização.</p>
+                    <a href="https://example.com" target="_blank">Saiba mais</a>
+                `
+            };
+
+            document.getElementById('popup-content').innerHTML = content[section];
+            document.getElementById('popup').style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
